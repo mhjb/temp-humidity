@@ -20,7 +20,6 @@ SENSOR_NAME = 'ex-cai-pi-outside-east'
 print('Connecting to database')
 
 client = pymongo.MongoClient(os.environ['mongo_conn_string'])
-#client = pymongo.MongoClient("mongodb+srv://raspberry:8MaBu2R17wmNJdVf@cluster0.3fml1.mongodb.net/test?retryWrites=true&w=majority")
 db = client.temperature_humidity
 Measurements = db['measurements']
 
